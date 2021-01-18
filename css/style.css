@@ -1,0 +1,50 @@
+body{
+    /*background: #ff7346;*/
+    background: #92dcff;
+}
+
+
+.dino{
+    width: 60px;
+    height:60px;
+    background-image: url("../img/dino.png");
+    position: absolute;
+    bottom: 0;
+}
+
+.cactus{
+    position: absolute;
+    width: 60px;
+    height:60px;
+    bottom: 0;
+    background-image: url("../img/cactus.png");
+}
+
+.game-over{
+    font-family: Arial;
+    font-size: 25px;
+    margin-top: 50px;
+    color: #666;
+    text-align: center;
+}
+
+@keyframes slideright{
+    form{
+        background-position: auto;
+    }
+    to{
+        background-position: 0;
+    }
+}
+
+.background{
+    position: absolute;
+    bottom: 0;
+    margin-left: -5px;
+    padding: 0px;
+    background-image: url("../img/deserto.jpg");
+    background-repeat: repeat-x;
+    animation: slideright  600s infinite linear;
+    width: 100%;
+    height: 354px;
+}
